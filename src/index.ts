@@ -135,7 +135,7 @@ export default function(api: IApi) {
                     return `\t${namespace}: ${stateName},`;
                 },
                 runntimeRegisterClassModels: ({ namespace, noExtnamePath }) => {
-                    return `\t\t\tdvaApp.model({ namespace: "${namespace}", ...getModel(${fistCharUpper(namespace)}.default) });`;
+                    return `\t\t\tdvaApp.model({ namespace: "${namespace}", ...getModel(${fistCharUpper(namespace)}) });`;
                 }
             });
 

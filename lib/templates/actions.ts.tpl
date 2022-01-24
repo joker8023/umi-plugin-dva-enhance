@@ -1,8 +1,8 @@
 import { modelsContainer } from 'dva-model-enhance';
-import Test from "/Users/yehangqi/Documents/work/web/umi-plugin-dva-enhance/example/pages/models/test";
+{{{ImportActions}}}
 
 const actions = {
-	test: new Test(),
+{{{RegisterGlobalActions}}}
 };
 
 modelsContainer.put(actions);

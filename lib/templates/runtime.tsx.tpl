@@ -1,13 +1,14 @@
 import React from 'react';
 import { getModel } from 'dva-model-enhance';
 import { getDvaApp } from '../core/umiExports';
+{{{ImportActions}}}
 
 class Container extends React.Component {
     constructor(props: any) {
         super(props);
         if (getDvaApp) {
             const dvaApp = getDvaApp();
-			dvaApp.model({ namespace: "test", ...getModel(require("/Users/yehangqi/Documents/work/web/umi-plugin-dva-enhance/example/pages/models/test").default) });
+{{{ RegisterClassModels }}}
         } else {
             console.error('请先加载 @umijs/plugin-dva 插件');
         }
